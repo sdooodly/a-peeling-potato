@@ -1,113 +1,171 @@
-body {
-  background-image: url("https://images.unsplash.com/photo-1590165482129-1b8b27698780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
-  background-attachment: fixed;
-  margin: 0;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-}
-
-main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.slider {
-  /* Styles for slideshow of potato types go here */
-}
-
-.quotes {
-  /* Styles for slideshow of potato quotes go here */
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer li {
-  margin-right: 10px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
+  
+  body {
+    background-image: url("https://images.unsplash.com/photo-1535293931721-68bd99f790b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    background-attachment: fixed;
+    margin: 0;
+  }
+ 
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
   }
-
+  
   .logo {
-    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
   }
-
+  
   nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-
+  
   nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin-right: 20px;
   }
-}
-/* Styles for header, footer, slider, and media queries go here */
-
-.quotes {
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
-    font-style: italic;
-    font-size: 24px;
-    color: #333;
-    animation: fade 5s infinite;
   }
   
-  @keyframes fade {
-    0% { opacity: 0; }
-    25% { opacity: 1; }
-    75% { opacity: 1; }
-    100% { opacity: 0; }
+  .slider {
+    /* Styles for slideshow of potato types go here */
   }
+  
+  .quotes {
+    /* Styles for slideshow of potato quotes go here */
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-right: 10px;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  /* Styles for header, footer, slider, and media queries go here */
+
+.quotes {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  color: #fafff8;
+  animation: fade 5s infinite;
+  
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.image {
+  flex-basis: 45%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  flex-basis: 50%;
+}
+
+/*gallery*/
+div.gallery {
+  margin: 25px;
+  border: 1px solid #ffffff;
+  float: left;
+  width: 180px;
+  padding: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
   
