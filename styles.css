@@ -4,6 +4,7 @@
     background-image: url("https://images.unsplash.com/photo-1535293931721-68bd99f790b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
     background-attachment: fixed;
     margin: 0;
+    color: rgb(194, 194, 194);
   }
  
   header {
@@ -16,8 +17,7 @@
   }
   
   .logo {
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 15px;
   }
   
   nav ul {
@@ -32,7 +32,7 @@
   }
   
   nav a {
-    color: #333;
+    color: #d6d6d6;
     text-decoration: none;
   }
   
@@ -40,14 +40,6 @@
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .slider {
-    /* Styles for slideshow of potato types go here */
-  }
-  
-  .quotes {
-    /* Styles for slideshow of potato quotes go here */
   }
   
   footer {
@@ -98,7 +90,7 @@
 
 .quotes {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 400px auto 50px auto;
   padding: 20px;
   text-align: center;
   font-style: italic;
@@ -119,6 +111,8 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  background-color: #00000094;
+  padding: 100px;
 }
 
 .header {
