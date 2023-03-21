@@ -7,6 +7,15 @@
     color: rgb(194, 194, 194);
   }
  
+  .cutepic{
+    padding: 0 auto;
+    text-align: center;
+  }
+   .cutepic img{
+    max-width: 400px;
+    height: auto;
+   }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -16,8 +25,9 @@
     margin: 0 50px;
   }
   
-  .logo {
-    font-size: 15px;
+  .warning {
+    font-size: 12px;
+    margin-bottom: 10px;
   }
   
   nav ul {
@@ -72,9 +82,6 @@
       align-items: flex-start;
     }
   
-    .logo {
-      margin-bottom: 10px;
-    }
   
     nav ul {
       flex-direction: column;
@@ -96,7 +103,7 @@
   font-style: italic;
   font-size: 24px;
   color: #fafff8;
-  animation: fade 5s infinite;
+  animation: fade 10s infinite;
   
 }
 
@@ -142,6 +149,7 @@
 }
 
 /*gallery*/
+
 div.gallery {
   margin: 25px;
   border: none;
