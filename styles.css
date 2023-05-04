@@ -2,18 +2,18 @@ body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   color: rgb(255, 234, 158);
-  background: url("https://images.unsplash.com/photo-1599490659213-e2b9527bd087?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background: url("bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .overlayContainer {
-  background-color: rgba(0, 0, 0, 0.716);
+  background-color: rgba(0, 0, 0, 0.816);
 }
 
 @media screen and (max-width: 768px) {
   .overlayContainer {
-    background-color: rgba(0, 0, 0, 0.716);
+    background-color: rgba(0, 0, 0, 0.816);
   }
 }
 
@@ -135,7 +135,7 @@ footer a {
 
 .container {
   width: 100%;
-  color: #aaa8a8;
+  color: rgb(255, 234, 158);
   font-size: large;
   text-align: justify;
   max-width: 800px;
