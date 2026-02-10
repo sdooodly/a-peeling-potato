@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
@@ -5,40 +9,45 @@ body {
   background: url("bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .overlayContainer {
   background-color: rgba(0, 0, 0, 0.816);
-}
-
-@media screen and (max-width: 768px) {
-  .overlayContainer {
-    background-color: rgba(0, 0, 0, 0.816);
-  }
+  min-height: 100vh;
 }
 
 .cutepic {
   padding: 0 auto;
   text-align: center;
+  margin: 20px 0;
 }
 
 .cutepic img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   background-color: #000000;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0;
+  gap: 15px;
 }
 
 .warning {
   font-size: 12px;
-  margin-bottom: 10px;
+  flex: 1 1 100%;
+  margin: 0 0 0 0;
 }
 
 nav ul {
@@ -46,21 +55,28 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 nav li {
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 nav a {
   color: rgb(255, 234, 158);
   text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
 }
 
 main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
 }
 
 footer {
@@ -68,51 +84,142 @@ footer {
   color: rgb(255, 234, 158);
   padding: 20px;
   text-align: center;
+  font-size: 14px;
 }
 
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+footer p {
   margin: 0;
-  padding: 0;
-}
-
-footer li {
-  margin-right: 10px;
 }
 
 footer a {
   color: rgb(255, 234, 158);
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Responsive Design */
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .warning {
+    font-size: 11px;
+    margin-bottom: 10px;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
   }
 
   nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .cutepic img {
+    max-width: 280px;
+  }
+
+  .gallery-container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  div.gallery {
+    flex: 1 1 calc(50% - 15px);
+    max-width: 45%;
+  }
+
+  .quotes {
+    margin: 20px 10px;
+    font-size: clamp(16px, 4vw, 20px);
+    padding: 15px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .content {
+    padding: 10px 0;
+  }
+
+  div.desc {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  header {
+    padding: 8px;
+  }
+
+  .warning {
+    font-size: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+  }
+
+  .container {
+    padding: 12px;
+    margin: 0;
+  }
+
+  .cutepic img {
+    max-width: 100%;
+  }
+
+  .quotes {
+    margin: 15px 5px;
+    padding: 10px;
+  }
+
+  main {
+    padding: 5px;
+  }
+
+  div.desc {
+    font-size: 12px;
+    padding: 8px;
   }
 }
 
 .quotes {
-  max-width: 960px;
-  margin: 400px auto 50px auto;
+  max-width: 900px;
+  margin: 40px auto 50px;
   padding: 20px;
   text-align: center;
   font-style: italic;
-  font-size: 24px;
+  font-size: clamp(18px, 5vw, 24px);
   color: rgb(255, 234, 158);
   animation: fade 10s infinite;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes fade {
@@ -136,11 +243,11 @@ footer a {
 .container {
   width: 100%;
   color: rgb(255, 234, 158);
-  font-size: large;
+  font-size: 1.1em;
   text-align: justify;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 20px;
   background: rgba(0, 0, 0, 0.144);
 }
 
@@ -157,27 +264,34 @@ footer a {
   padding: 20px 0;
 }
 
-/*
-
-
-gallery*/
+/* Gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 div.gallery {
   color: rgb(255, 234, 158);
-  margin: 25px;
-  border: none;
-  float: left;
-  width: 180px;
-  padding: auto;
+  border: 3px solid transparent;
+  flex: 1 1 calc(50% - 20px);
+  min-width: 200px;
+  max-width: 300px;
+  transition: border-color 0.3s ease;
 }
 
 div.gallery:hover {
-  border: 3px solid #f1e197;
+  border-color: #f1e197;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 div.desc {
@@ -187,11 +301,16 @@ div.desc {
 
 .icon {
   display: inline-block;
-  margin: 0 10px;
-  width: 20px;
-  height: 20px;
+  margin: 0 5px;
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .linkedin-icon {
@@ -205,8 +324,4 @@ div.desc {
 .gmail-icon {
   background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r2.png");
   background-size: cover;
-}
-
-.one {
-  display: flex;
 }
